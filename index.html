@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free Federation of Mars — raising the flag.">
+  <meta name="color-scheme" content="dark">
+  <title>Free Federation of Mars</title>
+  <style>
+    :root {
+      --bg: #1a0d08;
+      --rust: #c44b2a;
+      --dust: #d4a574;
+      --cream: #f3e6d4;
+      --copper: #e08a4a;
+      --muted: #b89278;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--cream);
+      background:
+        radial-gradient(ellipse 70% 45% at 50% 110%, rgba(196, 75, 42, 0.35) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 30% at 20% 20%, rgba(224, 138, 74, 0.12) 0%, transparent 50%),
+        linear-gradient(180deg, #2a1410 0%, var(--bg) 100%);
+      text-align: center;
+      padding: 2rem;
+    }
+    main { max-width: 32rem; }
+    .flag {
+      width: 3.5rem; height: 2.4rem; margin: 0 auto 1.4rem;
+      background: linear-gradient(180deg, var(--rust) 0 40%, var(--cream) 40% 55%, var(--copper) 55% 100%);
+      border-radius: 2px;
+      box-shadow: 0 4px 20px rgba(196, 75, 42, 0.45);
+      position: relative;
+    }
+    .flag::before {
+      content: "";
+      position: absolute;
+      left: -6px; top: -4px; bottom: -8px;
+      width: 3px;
+      background: var(--dust);
+      border-radius: 2px;
+    }
+    h1 {
+      font-size: clamp(1.55rem, 4.8vw, 2.15rem);
+      font-weight: 750;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.75rem;
+    }
+    .status {
+      font-size: 0.9rem;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 1.15rem;
+    }
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+    .domains {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: rgba(184, 146, 120, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="flag" aria-hidden="true"></div>
+    <h1>Free Federation of Mars</h1>
+    <p class="status">Raising the flag</p>
+    <p>One charter. Several doorways. Still assembling.</p>
+    <p class="domains">
+      freefederationofmars.com · freefederationofmars.space<br>
+      thefreefederationofmars.com · thefreefederationofmars.space
+    </p>
+  </main>
+</body>
+</html>
